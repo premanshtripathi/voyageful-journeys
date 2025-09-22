@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+body {
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    /* border: 2px solid blue; */
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-collapse {
+    position: relative;
+    z-index: 1031;
+    /* Slightly higher to ensure menu is above carousel */
+}
+
+.container-fluid {
+    margin: 0;
+}
+
+.navbar-collapse {
+    margin: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 25px;
+    padding-right: 50px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.d-flex {
+    margin-top: 20px;
+    margin-bottom: 0;
+    max-width: 600px;
+    width: 200%;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.form-control {
+    border: 2px solid transparent;
+    /* stable border */
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+}
+
+.form-control:hover {
+    box-shadow: 0 0 8px 2px rgba(100, 255, 100, 0.7);
+    /* glow effect */
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.btn.search {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    align-self: center;
+}
+
+.search-logo-pic {
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    /* margin-top: 20px; */
+    justify-content: flex-start;
+    max-width: 800px;
+    width: 200%;
+    translate: 75px;
+    /* border: 2px solid red; */
+}
+
+.nav-item {
+    max-width: 300px;
+    width: 100%;
+}
+
+.nav-link.buttons:hover {
+    transform: scale(0.9);
+    background: linear-gradient(135deg, yellow, limegreen);
+}
+
+.nav-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link.buttons {
+    background-color: white;
+    -webkit-text-fill-color: black;
+    border-radius: 50px;
+    max-width: 200px;
+    width: 80%;
+    transition: transform 0.1s ease;
+}
+
+.account-logo-container {
+    /* border: 2px solid white; */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.account-logo-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* margin-right: 20px; */
+    transition: transform 0.1s ease-in-out;
+}
+
+.account-logo-pic:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.carousel-inner {
+    border-radius: 100px;
+}
+
+.carousel-item {
+    height: 50vh;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.d-block.w-100 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+h2 {
+    color: white;
+    margin-left: 25px;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+        font-size:xx-large;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 350px;
+    overflow: hidden;
+    background-color: #FAF9F6 ;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+}
+.card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-name{
+    font-family:cursive;
+    font-style: italic;
+    font-size:xx-large;
+    align-self: flex-start;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.card>p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn.btn-outline-primary {
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.1s ease;    
+}
+.btn.btn-outline-primary:hover {
+    transform: scale(0.9);
+    background: linear-gradient(135deg, yellow, limegreen);
+    border: none;
+    margin-top: 11.6px;
+}
+.my-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: larger;
+    font: bold;
+}
+
+@media (max-width: 991px) {
+    .account-logo-container {
+        /* border: 2px solid blue; */
+        max-width: 300px;
+        margin-top: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: start;
+        translate: 5px;
+    }
+
+    .navbar-nav.me-auto.mb-2.mb-lg-0 {
+        width: 100%;
+        translate: 0px;
+    }
+
+    .d-flex {
+        width: 100%;
+        max-width: 400px;
+    }
+    .cards{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px;
+    }
+    .card{
+        width: 300px;
+    }
+}
+@media (max-width: 415px){
+    h1{
+        padding-right: 0;
+    }
+}
